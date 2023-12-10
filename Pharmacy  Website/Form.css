@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin-top: 5%;
+    margin-left: 9%;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.image-section {
+    flex: 1;
+    padding-right: 20px; /* Adjust spacing between sections */
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.form-section {
+    flex: 1;
+}
+
+.form-section form {
+    /* Your form styles */
+}
+
+/* Style form elements as needed */
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.p{
+    font-size: 25px;
+}
+
+.input{
+    font-size: 18px;
+}

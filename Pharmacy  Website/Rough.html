@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Serif', serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+header{
+    background-color:#028f76;
+    display: flex;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    align-items: center;/*Puts the logo text to the center of the image*/
+}
+.logo img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.header_logo{
+color: #eeee;
+font-weight: 500;
+}
+.nav_list{
+display: flex;
+align-items: center;
+}
+.nav_item{
+margin: 0 8px;
+}
+.nav_link{
+    padding: 10px;
+    color: #eeee;
+    font-size:0.9rem;
+    border-radius: 10px;
+}
+.nav_link:hover{
+    background-color: #45ccb3;
+}
+
+/* Hide dropdown content by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Change this to your desired background color */
+    box-shadow: 0 2px 5px rgba(220, 25, 25, 0.1); /* Optional: Add a shadow for the dropdown */
+    padding: 0; /* Optional: Adjust padding as needed */
+}
+
+/*Show dropdown content on hover*/
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ .dropdown-content li {
+    display: block;
+}
+
+ .dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333; /*Change this to your desired text color*/
+ } 
+
+.dropdown-content a:hover {
+    background-color: #f0f0f0; 
+}
+
+    </style>
+</head>
+<body>
+    <header class="nav-firstpage">
+        <div class="logo">
+            <img src="medical-team.png" alt="" class="logoed">
+            <a href="" class="nav_logo">PharamEase</a>
+        </div>
+        <nav class="navbar">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="Home.html" class="nav_link">Home</a></li>
+                <li class="nav_item dropdown">
+                    <a href="OurMedicines.html" class="nav_link">Our Medicines</a>
+                    <ul class="dropdown-content">
+                        <li><a href="medicine1.html">Medicine 1</a></li>
+                        <li><a href="medicine2.html">Medicine 2</a></li>
+                        <li><a href="medicine3.html">Medicine 3</a></li>
+                        <!-- Add more medicine links as needed -->
+                    </ul>
+                </li>
+                <li class="nav_item"><a href="HealthCare.html" class="nav_link">HealthCare</a></li>
+                <li class="nav_item"><a href="LabTest.html" class="nav_link">Lab Test</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+</body>
+</html>

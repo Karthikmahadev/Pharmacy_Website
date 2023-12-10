@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="Form.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="laboratory-2815641_1280.jpg" alt="Image">
+        </div>
+        <div class="form-section">
+            <form>
+                <p class="p">1.Your Contact Details</p>
+                <input type="text" id="name" name="name" placeholder="Full name">
+                <input type="number" id="Patient" name="patiente" placeholder="Patient Id If Exists">
+                <input type="number" id="Contact" name="cnumber" placeholder="Contact Number">
+                <input type="email" id="Email" name="emailid" placeholder="Email Id">
+                
+                <p class="p">2.Address</p>
+                <input type="text" id="Hno" name="H" placeholder="H-No">
+                <input type="text" id="sE" name="S" placeholder="Street">
+                <input type="text" id="Ha" name="A" placeholder="Area">
+                
+                <p class="p">District</p>
+                <input type="text" id="d" name="A" placeholder="District">
+                
+                <p class="p">3.Choose the Test Type. Show a message (Check at least one box without fail)</p>
+                <label>
+                    <input type="checkbox" name="testType" value="CBC"> CBC
+                </label>
+                <label>
+                    <input type="checkbox" name="testType" value="Complete Urine"> Complete Urine
+                </label>
+                <label>
+                    <input type="checkbox" name="testType" value="Lipid Profile"> Lipid Profile
+                </label>
+                <label>
+                    <input type="checkbox" name="testType" value="Thyroid Stimulating Hormone (TSH)"> Thyroid Stimulating Hormone (TSH)
+                </label>
+                <label>
+                    <input type="checkbox" name="testType" value="Glucose Test"> Glucose Test
+                </label><br>
+
+                <p class="p">4.Do you want a hard copy of the report also?</p>
+                <label>
+                    <input type="radio" name="hardCopy" value="Yes"> Yes
+                </label>
+                <label>
+                    <input type="radio" name="hardCopy" value="No"> No
+                </label><br>
+            
+                <p class="p">5.Select Your Comfortable Date and Time</p>
+                <label>
+                    Date:
+                    <input type="date" name="selectedDate">
+                </label>
+                <label>
+                    Time:
+                    <input type="time" name="selectedTime">
+                </label><br><br>
+
+                <input type="submit" value="Submit" class="button">
+            </form>
+        </div>
+    </div>
+     
+</body>
+</html>
